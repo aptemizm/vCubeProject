@@ -1,1 +1,1 @@
-# vCubeProject это не его проект
+# vCubeProject это наш проект
