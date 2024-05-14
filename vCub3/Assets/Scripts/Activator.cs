@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class активатор : MonoBehaviour
+public class Activator : MonoBehaviour
 {
   public GameObject[] firstGroup;
   public GameObject[] secondGroup;
@@ -15,7 +15,7 @@ public class активатор : MonoBehaviour
   {
 		if(canPush)
 		{
-			if (other.CompareTag("Cube") || other.CompareTag("Player")
+			if (other.CompareTag("Cube") || other.CompareTag("Player"))
 			{
 				foreach (GameObject first in firstGroup)
 				{
