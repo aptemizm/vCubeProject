@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Игровойменеджер : MonoBehaviour
+public class GameManager: MonoBehaviour
 {
     public void Quit()
     {
@@ -10,6 +10,6 @@ public class Игровойменеджер : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Buntar2");
+        SceneManager.LoadScene("locationV2");
     }
 }

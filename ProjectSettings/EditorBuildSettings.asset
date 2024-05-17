@@ -5,16 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Buntar.unity
     guid: 21bd85eadd9c7204dbaf178bcc546bec
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/locationV2.unity
+    guid: bb8919e6adb424a43944fdebf3173d10
+  - enabled: 1
     path: Assets/Scenes/Buntar2.unity
     guid: f04f69cd1a92f8d47be454fd42d22d81
   - enabled: 0
     path: Assets/Scenes/kliker2.unity
     guid: d48f9caab9af665419b910dbaab3c1d7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/kliker.unity
     guid: 740dbd43db3979245aadc984e302f500
   m_configObjects: {}
