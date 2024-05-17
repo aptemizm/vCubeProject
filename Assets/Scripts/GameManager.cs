@@ -12,4 +12,8 @@ public class GameManager: MonoBehaviour
     {
         SceneManager.LoadScene("locationV2");
     }
+    public void InMenu()
+    {
+        SceneManager.LoadScene("Buntar");
+    }
 }
