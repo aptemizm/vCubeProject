@@ -76,15 +76,6 @@ public class GameManager : MonoBehaviour
         SetActuveAudioSourses(true);
     }
 
-    public void Quit()
-    {
-        Application.Quit();
-    }
-
-    public void StartGame()
-    {
-        SceneManager.LoadScene("locationV2");
-    }
     public void Menu()
     {
         SceneManager.LoadScene("Buntar");
