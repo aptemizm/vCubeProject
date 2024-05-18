@@ -55,15 +55,6 @@ public class GameManager : MonoBehaviour
         flashLight.enabled = true;
     }
 
-    public void Quit()
-    {
-        Application.Quit();
-    }
-
-    public void StartGame()
-    {
-        SceneManager.LoadScene("locationV2");
-    }
     public void Menu()
     {
         SceneManager.LoadScene("Buntar");
