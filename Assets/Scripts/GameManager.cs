@@ -3,11 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private GameObject Misuc;
     [SerializeField] private GameObject MenuPause;
     private PlayerController playerController;
     private FlashLight flashLight;
-
+    private AudioSource[] AudioSouses;
     private bool GamePaesed;
+
 
     void Start()
     {
@@ -15,6 +17,8 @@ public class GameManager : MonoBehaviour
         playerController = FindObjectOfType<PlayerController>();
         flashLight = FindObjectOfType<FlashLight>();
         GamePaesed = false;
+
+        AudioSouses = Misuc.GetComponents<AudioSource>();
     }
 
     // Update is called once per frame
@@ -35,6 +39,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void SetActuveAudioSourses(bool value)
+    {
+        for (int i = 0; i < AudioSouses.Length; i++)
+        {
+            if (value)
+            {
+                AudioSouses[i].Play();
+            }
+            else
+            {
+                AudioSouses[i].Pause();
+            }
+        }
+    }
+
     public void PauseOn()
     {
         MenuPause.SetActive(true);
@@ -43,6 +62,7 @@ public class GameManager : MonoBehaviour
         Cursor.visible = true;
         playerController.enabled = false;
         flashLight.enabled = false;
+        SetActuveAudioSourses(false);
     }
 
     public void PauseOff()
@@ -53,6 +73,7 @@ public class GameManager : MonoBehaviour
         Cursor.visible = false;
         playerController.enabled = true;
         flashLight.enabled = true;
+        SetActuveAudioSourses(true);
     }
 
     public void Quit()
