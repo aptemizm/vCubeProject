@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7098075400793510478}
   - component: {fileID: 5000573049203631748}
   - component: {fileID: 2068225425260951110}
-  - component: {fileID: 8810376166398112919}
   m_Layer: 8
   m_Name: Dice_d6_Plastic Glossy Pure write
   m_TagString: Cube
@@ -94,17 +93,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 1.4, z: 1.4}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!64 &8810376166398112919
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6801955793903224657}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7193849918037988991, guid: 8d400ad96dc116647b0dfeba5b490335, type: 3}
